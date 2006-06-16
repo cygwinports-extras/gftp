@@ -1,0 +1,147 @@
+gftp
+------------------------------------------
+gFTP is a free multithreaded file transfer client for *NIX based
+machines, with both console and GTK2 GUI modes.
+
+Runtime requirements:
+  cygwin-1.5.18-1
+  glib2-runtime-2.6.6-1
+  gtk2-x11-runtime-2.6.10-1
+  libreadline6-5.0-4
+  openssl-0.9.8a-1
+
+Build requirements:
+(besides corresponding -devel packages)
+  cygwin-1.5.18-1
+  autoconf2.5-2.59-3
+  automake1.9-1.9.6-1
+  binutils-20050610-1
+  gawk-3.1.5-1
+  gcc-core-3.4.4-1
+  make-3.80-1
+  sed-4.1.4-1
+
+Canonical website:
+  http://www.gftp.org/
+
+-------------------------------------------
+
+Build instructions:
+  unpack gftp-2.0.18-X-src.tar.bz2
+    if you use setup to install this src package, it will be
+	 unpacked under /usr/src automatically
+  cd /usr/src
+  ./gftp-2.0.18-X.sh all
+
+This will create:
+  /usr/src/gftp-2.0.18-X-src.tar.bz2
+  /usr/src/gftp-2.0.18-X.tar.bz2
+
+-------------------------------------------
+
+Files included in the binary package:
+
+  /usr/bin/gftp
+  /usr/bin/gftp-gtk.exe
+  /usr/bin/gftp-text.exe
+  /usr/share/applications/gftp.desktop
+  /usr/share/doc/Cygwin/gftp-2.0.18.README
+  /usr/share/doc/gftp-2.0.18/ABOUT-NLS
+  /usr/share/doc/gftp-2.0.18/AUTHORS
+  /usr/share/doc/gftp-2.0.18/ChangeLog
+  /usr/share/doc/gftp-2.0.18/COPYING
+  /usr/share/doc/gftp-2.0.18/INSTALL
+  /usr/share/doc/gftp-2.0.18/NEWS
+  /usr/share/doc/gftp-2.0.18/README
+  /usr/share/doc/gftp-2.0.18/THANKS
+  /usr/share/doc/gftp-2.0.18/TODO
+  /usr/share/doc/gftp-2.0.18/getaddrinfo.README
+  /usr/share/gftp/bookmarks
+  /usr/share/gftp/connect.xpm
+  /usr/share/gftp/COPYING
+  /usr/share/gftp/deb.xpm
+  /usr/share/gftp/diff.xpm
+  /usr/share/gftp/dir.xpm
+  /usr/share/gftp/doc.xpm
+  /usr/share/gftp/dotdot.xpm
+  /usr/share/gftp/down.xpm
+  /usr/share/gftp/exe.xpm
+  /usr/share/gftp/gftp-logo.xpm
+  /usr/share/gftp/gftp-mini-logo.xpm
+  /usr/share/gftp/gftp.xpm
+  /usr/share/gftp/gftprc
+  /usr/share/gftp/img.xpm
+  /usr/share/gftp/left.xpm
+  /usr/share/gftp/linkdir.xpm
+  /usr/share/gftp/linkfile.xpm
+  /usr/share/gftp/man.xpm
+  /usr/share/gftp/open_dir.xpm
+  /usr/share/gftp/right.xpm
+  /usr/share/gftp/rpm.xpm
+  /usr/share/gftp/sound.xpm
+  /usr/share/gftp/stop.xpm
+  /usr/share/gftp/tar.xpm
+  /usr/share/gftp/txt.xpm
+  /usr/share/gftp/up.xpm
+  /usr/share/gftp/world.xpm
+  /usr/share/locale/am/LC_MESSAGES/gftp.mo
+  /usr/share/locale/ar/LC_MESSAGES/gftp.mo
+  /usr/share/locale/az/LC_MESSAGES/gftp.mo
+  /usr/share/locale/be/LC_MESSAGES/gftp.mo
+  /usr/share/locale/bg/LC_MESSAGES/gftp.mo
+  /usr/share/locale/bn/LC_MESSAGES/gftp.mo
+  /usr/share/locale/ca/LC_MESSAGES/gftp.mo
+  /usr/share/locale/cs/LC_MESSAGES/gftp.mo
+  /usr/share/locale/da/LC_MESSAGES/gftp.mo
+  /usr/share/locale/de/LC_MESSAGES/gftp.mo
+  /usr/share/locale/el/LC_MESSAGES/gftp.mo
+  /usr/share/locale/en_CA/LC_MESSAGES/gftp.mo
+  /usr/share/locale/en_GB/LC_MESSAGES/gftp.mo
+  /usr/share/locale/es/LC_MESSAGES/gftp.mo
+  /usr/share/locale/fi/LC_MESSAGES/gftp.mo
+  /usr/share/locale/fr/LC_MESSAGES/gftp.mo
+  /usr/share/locale/ga/LC_MESSAGES/gftp.mo
+  /usr/share/locale/hr/LC_MESSAGES/gftp.mo
+  /usr/share/locale/hu/LC_MESSAGES/gftp.mo
+  /usr/share/locale/it/LC_MESSAGES/gftp.mo
+  /usr/share/locale/ja/LC_MESSAGES/gftp.mo
+  /usr/share/locale/ko/LC_MESSAGES/gftp.mo
+  /usr/share/locale/mk/LC_MESSAGES/gftp.mo
+  /usr/share/locale/ml/LC_MESSAGES/gftp.mo
+  /usr/share/locale/ms/LC_MESSAGES/gftp.mo
+  /usr/share/locale/nl/LC_MESSAGES/gftp.mo
+  /usr/share/locale/no/LC_MESSAGES/gftp.mo
+  /usr/share/locale/pa/LC_MESSAGES/gftp.mo
+  /usr/share/locale/pl/LC_MESSAGES/gftp.mo
+  /usr/share/locale/pt/LC_MESSAGES/gftp.mo
+  /usr/share/locale/pt_BR/LC_MESSAGES/gftp.mo
+  /usr/share/locale/ro/LC_MESSAGES/gftp.mo
+  /usr/share/locale/ru/LC_MESSAGES/gftp.mo
+  /usr/share/locale/sk/LC_MESSAGES/gftp.mo
+  /usr/share/locale/sq/LC_MESSAGES/gftp.mo
+  /usr/share/locale/sr/LC_MESSAGES/gftp.mo
+  /usr/share/locale/sr@Latn/LC_MESSAGES/gftp.mo
+  /usr/share/locale/sv/LC_MESSAGES/gftp.mo
+  /usr/share/locale/ta/LC_MESSAGES/gftp.mo
+  /usr/share/locale/th/LC_MESSAGES/gftp.mo
+  /usr/share/locale/tr/LC_MESSAGES/gftp.mo
+  /usr/share/locale/uk/LC_MESSAGES/gftp.mo
+  /usr/share/locale/zh_CN/LC_MESSAGES/gftp.mo
+  /usr/share/locale/zh_TW/LC_MESSAGES/gftp.mo
+  /usr/share/man/man1/gftp.1.gz
+  /usr/share/pixmaps/gftp.png
+
+------------------
+
+Port Notes:
+
+----- version 2.0.18-1 -----
+Initial release for Cygwin.
+Includes patches:
+* update included fsplib to upstream 0.7;
+* include getaddrinfo for fsplib compilation
+  http://www.sra.co.jp/people/m-kasahr/getaddrinfo/
+
+
+Cygwin port maintained by:
+http://cygwinports.dotsrc.org/
