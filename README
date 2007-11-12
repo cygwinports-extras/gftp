@@ -4,22 +4,26 @@ gFTP is a free multithreaded file transfer client for *NIX based
 machines, with both console and GTK2 GUI modes.
 
 Runtime requirements:
-  cygwin-1.5.18-1
-  glib2-runtime-2.6.6-1
-  gtk2-x11-runtime-2.6.10-1
-  libreadline6-5.0-4
-  openssl-0.9.8a-1
+  cygwin-1.5.24-2
+  glib2-2.12.13-1
+  gtk2-x11-2.10.14-1
+  libgetaddrinfo0-1.6.3-2
+  libintl8-0.15-1
+  libreadline6-5.2.7-9
+  openssl-0.9.8e-3
 
 Build requirements:
 (besides corresponding -devel packages)
-  cygwin-1.5.18-1
-  autoconf2.5-2.59-3
-  automake1.9-1.9.6-1
-  binutils-20050610-1
-  gawk-3.1.5-1
-  gcc-core-3.4.4-1
-  make-3.80-1
-  sed-4.1.4-1
+  cygwin-1.5.24-2
+  autoconf2.5-2.61-1
+  automake1.7-1.7.9-3
+  binutils-20060817-1
+  cygport-0.3.6-1
+  gawk-3.1.5-4
+  gcc-core-3.4.4-3
+  make-3.81-1
+  pkg-config-0.21-1
+  sed-4.1.5-2
 
 Canonical website:
   http://www.gftp.org/
@@ -31,7 +35,7 @@ Build instructions:
     if you use setup to install this src package, it will be
 	 unpacked under /usr/src automatically
   cd /usr/src
-  ./gftp-2.0.18-X.sh all
+  cygport ./gftp-2.0.18-X.cygport all
 
 This will create:
   /usr/src/gftp-2.0.18-X-src.tar.bz2
@@ -55,7 +59,6 @@ Files included in the binary package:
   /usr/share/doc/gftp-2.0.18/README
   /usr/share/doc/gftp-2.0.18/THANKS
   /usr/share/doc/gftp-2.0.18/TODO
-  /usr/share/doc/gftp-2.0.18/getaddrinfo.README
   /usr/share/gftp/bookmarks
   /usr/share/gftp/connect.xpm
   /usr/share/gftp/COPYING
@@ -134,6 +137,10 @@ Files included in the binary package:
 ------------------
 
 Port Notes:
+
+----- version 2.0.18-2 -----
+Updated fsplib to upstream 0.9.
+Includes patches from Gentoo.
 
 ----- version 2.0.18-1 -----
 Initial release for Cygwin.
