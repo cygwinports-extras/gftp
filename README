@@ -4,25 +4,24 @@ gFTP is a free multithreaded file transfer client for *NIX based
 machines, with both console and GTK2 GUI modes.
 
 Runtime requirements:
-  cygwin-1.5.24-2
-  glib2-2.12.13-1
-  gtk2-x11-2.10.14-1
-  libgetaddrinfo0-1.6.3-2
-  libintl8-0.15-1
-  libreadline6-5.2.7-9
-  openssl-0.9.8e-3
+  cygwin-1.5.25-15
+  libglib2.0_0-2.18.3-1
+  libgtk2.0_0-2.14.6-1
+  libintl8-0.17-2
+  libreadline6-5.2.13-11
+  openssl-0.9.8i-1
 
 Build requirements:
 (besides corresponding -devel packages)
-  cygwin-1.5.24-2
-  autoconf2.5-2.61-1
-  automake1.7-1.7.9-3
-  binutils-20060817-1
-  cygport-0.3.6-1
-  gawk-3.1.5-4
+  autoconf2.5-2.63-1
+  automake1.9-1.9.6-3
+  binutils-20080624-2
+  cygport-0.4.3-1
+  gawk-3.1.6-1
   gcc-core-3.4.4-3
+  libgetaddrinfo-devel-1.6.3-3
   make-3.81-1
-  pkg-config-0.21-1
+  pkg-config-0.23a-2
   sed-4.1.5-2
 
 Canonical website:
@@ -31,15 +30,15 @@ Canonical website:
 -------------------------------------------
 
 Build instructions:
-  unpack gftp-2.0.18-X-src.tar.bz2
+  unpack gftp-2.0.19-X-src.tar.bz2
     if you use setup to install this src package, it will be
 	 unpacked under /usr/src automatically
   cd /usr/src
-  cygport ./gftp-2.0.18-X.cygport all
+  cygport ./gftp-2.0.19-X.cygport all
 
 This will create:
-  /usr/src/gftp-2.0.18-X-src.tar.bz2
-  /usr/src/gftp-2.0.18-X.tar.bz2
+  /usr/src/gftp-2.0.19-X-src.tar.bz2
+  /usr/src/gftp-2.0.19-X.tar.bz2
 
 -------------------------------------------
 
@@ -49,19 +48,17 @@ Files included in the binary package:
   /usr/bin/gftp-gtk.exe
   /usr/bin/gftp-text.exe
   /usr/share/applications/gftp.desktop
-  /usr/share/doc/Cygwin/gftp-2.0.18.README
-  /usr/share/doc/gftp-2.0.18/ABOUT-NLS
-  /usr/share/doc/gftp-2.0.18/AUTHORS
-  /usr/share/doc/gftp-2.0.18/ChangeLog
-  /usr/share/doc/gftp-2.0.18/COPYING
-  /usr/share/doc/gftp-2.0.18/INSTALL
-  /usr/share/doc/gftp-2.0.18/NEWS
-  /usr/share/doc/gftp-2.0.18/README
-  /usr/share/doc/gftp-2.0.18/THANKS
-  /usr/share/doc/gftp-2.0.18/TODO
+  /usr/share/doc/gftp-2.0.19/ABOUT-NLS
+  /usr/share/doc/gftp-2.0.19/AUTHORS
+  /usr/share/doc/gftp-2.0.19/COPYING
+  /usr/share/doc/gftp-2.0.19/ChangeLog
+  /usr/share/doc/gftp-2.0.19/INSTALL
+  /usr/share/doc/gftp-2.0.19/README
+  /usr/share/doc/gftp-2.0.19/THANKS
+  /usr/share/doc/gftp-2.0.19/TODO
+  /usr/share/gftp/COPYING
   /usr/share/gftp/bookmarks
   /usr/share/gftp/connect.xpm
-  /usr/share/gftp/COPYING
   /usr/share/gftp/deb.xpm
   /usr/share/gftp/diff.xpm
   /usr/share/gftp/dir.xpm
@@ -69,8 +66,13 @@ Files included in the binary package:
   /usr/share/gftp/dotdot.xpm
   /usr/share/gftp/down.xpm
   /usr/share/gftp/exe.xpm
+  /usr/share/gftp/gftp-16x16.png
+  /usr/share/gftp/gftp-22x22.png
+  /usr/share/gftp/gftp-24x24.png
+  /usr/share/gftp/gftp-32x32.png
+  /usr/share/gftp/gftp-48x48.png
   /usr/share/gftp/gftp-logo.xpm
-  /usr/share/gftp/gftp-mini-logo.xpm
+  /usr/share/gftp/gftp-scalable.svg
   /usr/share/gftp/gftp.xpm
   /usr/share/gftp/gftprc
   /usr/share/gftp/img.xpm
@@ -97,6 +99,7 @@ Files included in the binary package:
   /usr/share/locale/cs/LC_MESSAGES/gftp.mo
   /usr/share/locale/da/LC_MESSAGES/gftp.mo
   /usr/share/locale/de/LC_MESSAGES/gftp.mo
+  /usr/share/locale/dz/LC_MESSAGES/gftp.mo
   /usr/share/locale/el/LC_MESSAGES/gftp.mo
   /usr/share/locale/en_CA/LC_MESSAGES/gftp.mo
   /usr/share/locale/en_GB/LC_MESSAGES/gftp.mo
@@ -104,22 +107,30 @@ Files included in the binary package:
   /usr/share/locale/fi/LC_MESSAGES/gftp.mo
   /usr/share/locale/fr/LC_MESSAGES/gftp.mo
   /usr/share/locale/ga/LC_MESSAGES/gftp.mo
+  /usr/share/locale/gl/LC_MESSAGES/gftp.mo
+  /usr/share/locale/gu/LC_MESSAGES/gftp.mo
+  /usr/share/locale/he/LC_MESSAGES/gftp.mo
   /usr/share/locale/hr/LC_MESSAGES/gftp.mo
   /usr/share/locale/hu/LC_MESSAGES/gftp.mo
   /usr/share/locale/it/LC_MESSAGES/gftp.mo
   /usr/share/locale/ja/LC_MESSAGES/gftp.mo
   /usr/share/locale/ko/LC_MESSAGES/gftp.mo
+  /usr/share/locale/lt/LC_MESSAGES/gftp.mo
+  /usr/share/locale/lv/LC_MESSAGES/gftp.mo
   /usr/share/locale/mk/LC_MESSAGES/gftp.mo
   /usr/share/locale/ml/LC_MESSAGES/gftp.mo
   /usr/share/locale/ms/LC_MESSAGES/gftp.mo
+  /usr/share/locale/nb/LC_MESSAGES/gftp.mo
+  /usr/share/locale/ne/LC_MESSAGES/gftp.mo
   /usr/share/locale/nl/LC_MESSAGES/gftp.mo
-  /usr/share/locale/no/LC_MESSAGES/gftp.mo
+  /usr/share/locale/oc/LC_MESSAGES/gftp.mo
   /usr/share/locale/pa/LC_MESSAGES/gftp.mo
   /usr/share/locale/pl/LC_MESSAGES/gftp.mo
   /usr/share/locale/pt/LC_MESSAGES/gftp.mo
   /usr/share/locale/pt_BR/LC_MESSAGES/gftp.mo
   /usr/share/locale/ro/LC_MESSAGES/gftp.mo
   /usr/share/locale/ru/LC_MESSAGES/gftp.mo
+  /usr/share/locale/rw/LC_MESSAGES/gftp.mo
   /usr/share/locale/sk/LC_MESSAGES/gftp.mo
   /usr/share/locale/sq/LC_MESSAGES/gftp.mo
   /usr/share/locale/sr/LC_MESSAGES/gftp.mo
@@ -130,6 +141,7 @@ Files included in the binary package:
   /usr/share/locale/tr/LC_MESSAGES/gftp.mo
   /usr/share/locale/uk/LC_MESSAGES/gftp.mo
   /usr/share/locale/zh_CN/LC_MESSAGES/gftp.mo
+  /usr/share/locale/zh_HK/LC_MESSAGES/gftp.mo
   /usr/share/locale/zh_TW/LC_MESSAGES/gftp.mo
   /usr/share/man/man1/gftp.1.gz
   /usr/share/pixmaps/gftp.png
@@ -137,6 +149,9 @@ Files included in the binary package:
 ------------------
 
 Port Notes:
+
+----- version 2.0.19-1 -----
+Version bump.
 
 ----- version 2.0.18-2 -----
 Updated fsplib to upstream 0.9.
