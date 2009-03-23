@@ -1,16 +1,12 @@
 DESCRIPTION="GTK+ FTP client"
 HOMEPAGE="http://www.gftp.org/"
 SRC_URI="http://www.gftp.org/${P}.tar.bz2"
-PATCH_URI="
-	2.0.19-fsplib-configure.patch
-	2.0.19-exeext.patch
-	2.0.19-stropts.h.patch
-"
+PATCH_URI="2.0.19-exeext.patch
+           2.0.19-fsplib.patch
+           2.0.19-stropts.h.patch"
 
 CYGCONF_ARGS="
 	--enable-gtkport --enable-gtk20
 	--enable-textport
 	--enable-ssl
-	--with-locking=none
 "
-MAKEOPTS+=" LIBS=/usr/lib/libgetaddrinfo.a"

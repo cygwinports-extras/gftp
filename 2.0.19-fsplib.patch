@@ -1,0 +1,27 @@
+These should be handled with configure tests, but in the meantime...
+
+--- origsrc/gftp-2.0.19/lib/fsplib/fsplib.c	2008-11-29 06:47:18.000000000 -0600
++++ src/gftp-2.0.19/lib/fsplib/fsplib.c	2009-03-23 09:21:54.953125000 -0500
+@@ -634,7 +634,9 @@ int fsp_readdir_r(FSP_DIR *dir,struct di
+ #ifdef HAVE_DIRENT_FILENO
+     entry->d_fileno = 10;
+ #endif    
++#ifdef HAVE_DIRENT_RECLEN
+     entry->d_reclen = fentry.reclen;
++#endif
+     strncpy(entry->d_name,fentry.name,MAXNAMLEN);
+ 
+     if (fentry.namlen >= MAXNAMLEN)
+--- origsrc/gftp-2.0.19/lib/fsplib/lock.c	2008-11-29 06:47:18.000000000 -0600
++++ src/gftp-2.0.19/lib/fsplib/lock.c	2009-03-23 09:17:39.093750000 -0500
+@@ -46,6 +46,10 @@ static void make_key_string(	FSP_LOCK *l
+ #include <sys/stat.h>
+ #include <unistd.h>
+ 
++#ifdef __CYGWIN__
++#define _SEM_SEMUN_UNDEFINED
++#endif
++
+ #ifdef _SEM_SEMUN_UNDEFINED
+ union semun
+ {

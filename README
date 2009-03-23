@@ -4,23 +4,23 @@ gFTP is a free multithreaded file transfer client for *NIX based
 machines, with both console and GTK2 GUI modes.
 
 Runtime requirements:
-  cygwin-1.5.25-15
-  libglib2.0_0-2.18.3-1
-  libgtk2.0_0-2.14.6-1
-  libintl8-0.17-2
+  cygwin-1.7.0-44
+  libgcc1-4.3.2-2
+  libglib2.0_0-2.20.0-1
+  libgtk2.0_0-2.16.0-1
+  libintl8-0.17-10
   libreadline6-5.2.13-11
-  openssl-0.9.8i-1
+  openssl-0.9.8j-2
 
 Build requirements:
 (besides corresponding -devel packages)
-  autoconf2.5-2.63-1
-  automake1.9-1.9.6-3
+  autoconf2.5-2.63-10
+  automake1.9-1.9.6-10
   binutils-20080624-2
-  cygport-0.4.3-1
-  gawk-3.1.6-1
-  gcc-core-3.4.4-3
-  libgetaddrinfo-devel-1.6.3-3
-  make-3.81-1
+  cygport-0.9.6-1
+  gawk-3.1.6-2
+  gcc4-core-4.3.2-2
+  make-3.81-2
   pkg-config-0.23a-2
   sed-4.1.5-2
 
@@ -48,14 +48,13 @@ Files included in the binary package:
   /usr/bin/gftp-gtk.exe
   /usr/bin/gftp-text.exe
   /usr/share/applications/gftp.desktop
-  /usr/share/doc/gftp-2.0.19/ABOUT-NLS
-  /usr/share/doc/gftp-2.0.19/AUTHORS
-  /usr/share/doc/gftp-2.0.19/COPYING
-  /usr/share/doc/gftp-2.0.19/ChangeLog
-  /usr/share/doc/gftp-2.0.19/INSTALL
-  /usr/share/doc/gftp-2.0.19/README
-  /usr/share/doc/gftp-2.0.19/THANKS
-  /usr/share/doc/gftp-2.0.19/TODO
+  /usr/share/doc/gftp/ABOUT-NLS
+  /usr/share/doc/gftp/AUTHORS
+  /usr/share/doc/gftp/COPYING
+  /usr/share/doc/gftp/ChangeLog
+  /usr/share/doc/gftp/README
+  /usr/share/doc/gftp/THANKS
+  /usr/share/doc/gftp/TODO
   /usr/share/gftp/COPYING
   /usr/share/gftp/bookmarks
   /usr/share/gftp/connect.xpm
@@ -150,19 +149,8 @@ Files included in the binary package:
 
 Port Notes:
 
------ version 2.0.19-1 -----
-Version bump.
-
------ version 2.0.18-2 -----
-Updated fsplib to upstream 0.9.
-Includes patches from Gentoo.
-
------ version 2.0.18-1 -----
-Initial release for Cygwin.
-Includes patches:
-* update included fsplib to upstream 0.7;
-* include getaddrinfo for fsplib compilation
-  http://www.sra.co.jp/people/m-kasahr/getaddrinfo/
+----- version 2.0.19-10 -----
+Initial release for Cygwin 1.7.
 
 
 Cygwin port maintained by:
