@@ -1,0 +1,21 @@
+--- origsrc/gftp-2.0.19/configure.in	2012-03-15 23:51:27.990995900 -0500
++++ src/gftp-2.0.19/configure.in	2012-03-15 23:53:22.126524100 -0500
+@@ -85,10 +85,6 @@ else
+   found_glib20=0;
+ fi
+ 
+-if test "x$GFTP_TEXT" = "x" -a $found_glib20 = 0 ; then
+-  AM_PATH_GLIB(1.2.3, , AC_MSG_ERROR(gFTP needs GLIB 1.2.3 or higher))
+-fi
+-
+ EXTRA_LIBS=""
+ 
+ # FreeBSD needs this
+@@ -202,7 +198,6 @@ if test "x$enable_gtkport" = "xyes" ; th
+   fi
+ 
+   if test "x$GFTP_GTK" = "x" ; then
+-    AM_PATH_GTK(1.2.3, GFTP_GTK="gftp-gtk\$(EXEEXT)", AC_MSG_WARN(gFTP needs GTK+ 1.2.3 or higher for the graphical version. Only building the text version))
+     GTHREAD_LIBS="-lgthread"
+   else
+     GTHREAD_LIBS="-lgthread-2.0"
