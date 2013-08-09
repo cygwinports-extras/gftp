@@ -1,5 +1,0 @@
-category: Gnome Net
-requires: libglib2.0_0 libgtk2.0_0 libintl8 libreadline7 libopenssl100
-sdesc: "FTP clients for console and GTK2"
-ldesc: "gFTP is a free multithreaded file transfer client for *NIX based
-machines, with both console and GTK2 GUI modes."

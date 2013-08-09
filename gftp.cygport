@@ -1,0 +1,19 @@
+NAME="gftp"
+VERSION=2.0.19
+RELEASE=11
+CATEGORY="Net"
+SUMMARY="GTK+ FTP client"
+DESCRIPTION="gFTP is a free multithreaded file transfer client for *NIX based
+machines, with both console and GTK2 GUI modes."
+HOMEPAGE="http://www.gftp.org/"
+SRC_URI="http://www.gftp.org/gftp-${VERSION}.tar.bz2"
+PATCH_URI="2.0.19-exeext.patch
+           2.0.19-fsplib.patch
+           2.0.19-no-gtk1.patch
+           2.0.19-stropts.h.patch"
+
+CYGCONF_ARGS="
+	--enable-gtkport --enable-gtk20
+	--enable-textport
+	--enable-ssl
+"
